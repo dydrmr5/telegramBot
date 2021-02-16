@@ -3,7 +3,7 @@ import random
 # baca isi_bot.txt
 def botGreetings():
   greets = []
-  open_file_isi = open("isi_bot.txt")
+  open_file_isi = open("txt_files/isi_bot.txt")
   get_isi = open_file_isi.readlines()
   for isi in get_isi:
     greets.append(isi.strip())
