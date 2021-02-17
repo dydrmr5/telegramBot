@@ -9,7 +9,7 @@ python3
 pip3 install -r requirements.txt
 ```
 
-# file information
+## file information
 ```
 telegramBot
 ├── emojis.py
@@ -17,6 +17,8 @@ telegramBot
 ├── main.py
 ├── menu_reply.py
 ├── peribahasa.py
+├── __pycache__
+│   └── emojis.cpython-38.pyc
 ├── README.md
 ├── requirements.txt
 └── txt_files
