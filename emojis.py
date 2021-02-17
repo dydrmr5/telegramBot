@@ -7,3 +7,14 @@ def sad():
     sad = ["😞" ,"😔" ,"😟" ,"😕" ,"🙁" ,"☹️"]
     
     return random.choice(sad)
+
+hand = ["👋" ,"🤚" ,"🖐" ,"✋"]
+
+
+
+"""
+penggunaan 
+import emojis
+print(emojis.happy())
+
+"""
