@@ -1,37 +1,37 @@
+# ----- function-function untuk return jenis-jenis peribahasa -----
 import random
 
-# baca isi_bot.txt
-def botGreetings():
-  greets = []
-  open_file_isi = open("txt_files/isi_bot.txt")
-  get_isi = open_file_isi.readlines()
-  for isi in get_isi:
-    greets.append(isi.strip())
-  return random.choice(greets)
+# function : print garis lurus
+def printLine():
+	return f'------------------------------------------------------------'
 
-# baca list_perintah.txt
-def showMenu():
-  list_menu = '''
-  /start = mulai bot\n/menu = tampilkan menu peribahasa\n/help = bantuan
-  '''
-  return list_menu 
+# function : return peribahasa bidal secara random
+def getBidal():
+	peribahasa_bidal = []
+	open_bidal = open("txt_files/bidal.txt")
+	read_bidal = open_bidal.readlines()
+	for isi in read_bidal:
+		peribahasa_bidal.append(isi.strip())
+	random_bidal = "\n".join(random.sample(peribahasa_bidal, 3))
+	return ("Nih kak, 3 Peribahasa Bidal 😎👇\n{0}\n{1}".format(printLine(), random_bidal))
 
-# --------------------MENU PERIBAHASA-----------------------
-menu_peribahasa = '''
-/Peribahasa_Bidal\n/Peribahasa_Pepatah\n/Peribahasa_Perumpamaan
-'''
+# function : return peribahasa pepatah secara random
+def getPepatah():
+	peribahasa_pepatah = []
+	open_pepatah = open("txt_files/pepatah.txt")
+	read_pepatah = open_pepatah.readlines()
+	for isi in read_pepatah:
+		peribahasa_pepatah.append(isi.strip())
+	random_pepatah = "\n".join(random.sample(peribahasa_pepatah, 3))
+	return ("Nih kak, 3 Peribahasa Pepatah 😎👇\n{0}\n{1}".format(printLine(), random_pepatah))
 
-# return 1 peribahasa bidal random
-def showBidal():
-  peribahasa_bidal = ['Ada budi ada talas. Ada budi ada balas.', 'Ikan sepat ikan gabus. Makin cepat makin bagus.', 'Maju terus pantang mundur.', 'Bersatu kita teguh, bercerai kita runtuh.', 'Sekali merdeka, tetap merdeka.']
-  return random.choice(peribahasa_bidal)
 
-# return 1 peribahasa pepatah random
-def showPepatah():
-  peribahasa_pepatah = ['Sehari selembar benang, lama-lama jadi kain', 'Air tenang menghanyutkan', 'Bagai bumi dan langit', 'Berjalan pelihara kaki, berkata pelihara lidah', 'Di mana ada kemauan, di situ ada jalan']
-  return random.choice(peribahasa_pepatah)
-
-# return 1 peribahasa perumpamaan random
-def showPerumpamaan():
-  peribahasa_perumpamaan = ['Bagai air di atas daun talas', 'Bagai anjing mengunyah tulang', 'Menepuk air di dulang terpercik muka sendiri', 'Sambil menyelam minum air', 'Belum beranak sudah berbesan']
-  return random.choice(peribahasa_perumpamaan)
+# function : return peribahasa perumpamaan secara random
+def getPerumpamaan():
+	peribahasa_perumpamaan = []
+	open_perumpamaan = open("txt_files/perumpamaan.txt")
+	read_perumpamaan = open_perumpamaan.readlines()
+	for isi in read_perumpamaan:
+		peribahasa_perumpamaan.append(isi.strip())
+	random_perumpamaan = "\n".join(random.sample(peribahasa_perumpamaan, 3))
+	return ("Nih kak, 3 Peribahasa Perumpamaan 😎👇\n{0}\n{1}".format(printLine(), random_perumpamaan))
