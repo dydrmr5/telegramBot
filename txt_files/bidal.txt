@@ -1,47 +1,47 @@
-'Ada budi ada talas. Ada budi ada balas.'
-'Ikan sepat ikan gabus. Makin cepat makin bagus.'
-'Maju terus pantang mundur.'
-'Bersatu kita teguh, bercerai kita runtuh.'
-'Sekali merdeka, tetap merdeka.'
-'Dalam laut dapat diduga, dalam hati siapa duga.'
-'Tua-tua keladi, makin tua makin jadi.'
-'biar bersimpuh peluh d muka, jangan tersingkap kain basahan.'
-'Bongkok kali penyangkut insang, bongkok fiil penyangkut hutang.'
-'Di dalam manis ada pahitnya, di dalam pahit ada manisnya.'
-'Kalau puntung masih berapi, janganlah dihembus-hembus juga.'
-'Lulus tangan dilakukan, lulus kaki dilangkahkan.'
-'Jika kail panjang sejengkal, lautan dalam jangan juga.'
-'Terlajak perahu boleh diundur, terlajak kata buruk padahnya.'
-'Sesat di hulu jalan, balik ke pangkal jalan.'
-'Jikalau beranak, ikuti kata bidan.'
-'Adat bersendi syarak, syarak bersendi adat.'
-'Adat diisi, lembaga dituang.'
-'Adat periuk berkerak, adat berlesung berdekak.'
-'Adat sepanjang jalan, cupak sepanjang betung.'
-'Anak dipangku dilepaskan, beruk di rimba disusukan.'
-'Angguk bukan, geleng ia.'
-'Berguru kepalang ajar, bagai bunga kembang tak jadi.'
-'Berbilang dari esa, mengaji dari alif.'
-'Besar kayu besar bahannya, kecil kayu kecil bahannya.'
-'Berjalan sampai ke batas, berlayar sampai ke pulau.'
-'Dangkal telah ke seberang, dalam telah ajuk.'
-'Empang sampai ke seberang, dinding sampai ke langit.'
-'Enggan seribu daya, mau sepatah kata.'
-'Esa hilang, dua terbilang.'
-'Gajah mati meninggalkan gading, orang mati meninggalkan nama.'
-'Gemuk membuang lemak, cerdik membuang kawan.'
-'Hancur badan dikandung tanah, budi baik terkenang jua.'
-'Ikut hati mati, ikut mata buta.'
-'Ingat sebelum kena, ingat sebelum habis.'
-'Seperti ilmu padi, makin berisi makin merunduk.'
-'Isi lemak dapat ke orang, tulang bulu pulang ke kita.'
-'Jika pisau baja, makin dikikir bertambah tumpul.'
-'Kalah jadi abu, menang jadi arang.'
-'Kain ama dicampak buang, kain baru pula dicari.'
-'Kasihan anak tangan-tangankan, kasihan biji tiggal-tinggalkan.'
-'Laki pulang kelaparan, dagang lalu ditanakkan.'
-'Memikul di bahu, menjunjung di kepala.'
-'Pecah anak buyung, tempayan ada.'
-'Sungguhpun kawat yang dibentuk, ikan di laut yang diadang.'
-'Gayung bersambut, kata menjawab.'
-'Setinggi-tinggi bangau terbang, surutnya ke kubangan.'
+"Ada budi ada talas. Ada budi ada balas."
+"Ikan sepat ikan gabus. Makin cepat makin bagus."
+"Maju terus pantang mundur."
+"Bersatu kita teguh, bercerai kita runtuh."
+"Sekali merdeka, tetap merdeka."
+"Dalam laut dapat diduga, dalam hati siapa duga."
+"Tua-tua keladi, makin tua makin jadi."
+"biar bersimpuh peluh d muka, jangan tersingkap kain basahan."
+"Bongkok kali penyangkut insang, bongkok fiil penyangkut hutang."
+"Di dalam manis ada pahitnya, di dalam pahit ada manisnya."
+"Kalau puntung masih berapi, janganlah dihembus-hembus juga."
+"Lulus tangan dilakukan, lulus kaki dilangkahkan."
+"Jika kail panjang sejengkal, lautan dalam jangan juga."
+"Terlajak perahu boleh diundur, terlajak kata buruk padahnya."
+"Sesat di hulu jalan, balik ke pangkal jalan."
+"Jikalau beranak, ikuti kata bidan."
+"Adat bersendi syarak, syarak bersendi adat."
+"Adat diisi, lembaga dituang."
+"Adat periuk berkerak, adat berlesung berdekak."
+"Adat sepanjang jalan, cupak sepanjang betung."
+"Anak dipangku dilepaskan, beruk di rimba disusukan."
+"Angguk bukan, geleng ia."
+"Berguru kepalang ajar, bagai bunga kembang tak jadi."
+"Berbilang dari esa, mengaji dari alif."
+"Besar kayu besar bahannya, kecil kayu kecil bahannya."
+"Berjalan sampai ke batas, berlayar sampai ke pulau."
+"Dangkal telah ke seberang, dalam telah ajuk."
+"Empang sampai ke seberang, dinding sampai ke langit."
+"Enggan seribu daya, mau sepatah kata."
+"Esa hilang, dua terbilang."
+"Gajah mati meninggalkan gading, orang mati meninggalkan nama."
+"Gemuk membuang lemak, cerdik membuang kawan."
+"Hancur badan dikandung tanah, budi baik terkenang jua."
+"Ikut hati mati, ikut mata buta."
+"Ingat sebelum kena, ingat sebelum habis."
+"Seperti ilmu padi, makin berisi makin merunduk."
+"Isi lemak dapat ke orang, tulang bulu pulang ke kita."
+"Jika pisau baja, makin dikikir bertambah tumpul."
+"Kalah jadi abu, menang jadi arang."
+"Kain ama dicampak buang, kain baru pula dicari."
+"Kasihan anak tangan-tangankan, kasihan biji tiggal-tinggalkan."
+"Laki pulang kelaparan, dagang lalu ditanakkan."
+"Memikul di bahu, menjunjung di kepala."
+"Pecah anak buyung, tempayan ada."
+"Sungguhpun kawat yang dibentuk, ikan di laut yang diadang."
+"Gayung bersambut, kata menjawab."
+"Setinggi-tinggi bangau terbang, surutnya ke kubangan."
