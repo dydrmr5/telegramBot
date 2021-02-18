@@ -1,6 +1,6 @@
 # ----- function-function untuk return jenis-jenis peribahasa -----
 import random
-
+import emojis
 # function : print garis lurus
 def printLine():
 	return f'------------------------------------------------------------'
@@ -13,7 +13,7 @@ def getBidal():
 	for isi in read_bidal:
 		peribahasa_bidal.append(isi.strip())
 	random_bidal = "\n".join(random.sample(peribahasa_bidal, 3))
-	return ("Nih kak, 3 Peribahasa Bidal 😎👇\n{0}\n{1}".format(printLine(), random_bidal))
+	return ("Nih kak, 3 Peribahasa Bidal {0}👇\n{1}\n{2}".format(emojis.eyeglasses_emojis[1] ,printLine(), random_bidal))
 
 # function : return peribahasa pepatah secara random
 def getPepatah():
