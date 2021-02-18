@@ -1,6 +1,7 @@
 # ----- function-function untuk return jenis-jenis peribahasa -----
 import random
 import emojis
+
 # function : print garis lurus
 def printLine():
 	return f'------------------------------------------------------------'
@@ -23,8 +24,7 @@ def getPepatah():
 	for isi in read_pepatah:
 		peribahasa_pepatah.append(isi.strip())
 	random_pepatah = "\n".join(random.sample(peribahasa_pepatah, 3))
-	return ("Nih kak, 3 Peribahasa Pepatah 😎👇\n{0}\n{1}".format(printLine(), random_pepatah))
-
+	return ("Nih kak, 3 Peribahasa Pepatah {0}👇\n{1}\n{2}".format(emojis.eyeglasses_emojis[1], printLine(), random_pepatah))
 
 # function : return peribahasa perumpamaan secara random
 def getPerumpamaan():
@@ -34,4 +34,4 @@ def getPerumpamaan():
 	for isi in read_perumpamaan:
 		peribahasa_perumpamaan.append(isi.strip())
 	random_perumpamaan = "\n".join(random.sample(peribahasa_perumpamaan, 3))
-	return ("Nih kak, 3 Peribahasa Perumpamaan 😎👇\n{0}\n{1}".format(printLine(), random_perumpamaan))
+	return ("Nih kak, 3 Peribahasa Perumpamaan {0}👇\n{1}\n{2}".format(emojis.eyeglasses_emojis[1], printLine(), random_perumpamaan))
