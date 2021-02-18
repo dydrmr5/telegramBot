@@ -6,7 +6,7 @@ import menu_reply
 import emojis
 
 # TELEGRAM BOT TOKEN
-bot = telebot.TeleBot("1660574633:AAG4qU37ciBZp49Kc0OX4GAWH3GUeLyCCUw", parse_mode = None)
+bot = telebot.TeleBot(peribahasa.bot_token, parse_mode = None)
 
 # ---------- MAIN MENU ----------
 # bot reply : perkenalan
