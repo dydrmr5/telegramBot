@@ -3,16 +3,23 @@ import telebot
 import random
 import peribahasa
 import menu_reply
+import emojis
 
 # TELEGRAM BOT TOKEN
 bot = telebot.TeleBot("1660574633:AAG4qU37ciBZp49Kc0OX4GAWH3GUeLyCCUw", parse_mode = None)
 
-# ---------- main menu ----------
+# ---------- MAIN MENU ----------
+# bot reply : perkenalan
+@bot.message_handler(commands = ['start'])
+def sentStartInfo(message):
+	user = message.from_user.first_name
+	bot.reply_to(message, f'{menu_reply.botGreetings()} {user} {emojis.handWaves()}.\n{menu_reply.botStart()}')
+
 # bot reply : greetings/menyapa
 @bot.message_handler(commands = ['hi'])
 def sentGreets(message):
 	user = message.from_user.first_name
-	bot.reply_to(message, f'{menu_reply.botGreetings()} {user} 👋')
+	bot.reply_to(message, f'{menu_reply.botGreetings()} {user} {emojis.handWaves()}.')
 
 # bot reply : menu (daftar menu bot)
 @bot.message_handler(commands = ['menu'])
@@ -37,7 +44,7 @@ def showPeribahasa(message):
 	elif 'perumpamaan' in perintah.lower():
 		bot.reply_to(message, peribahasa.getPerumpamaan())
 	else:
-		bot.reply_to(message, 'Peribahasa tidak ditemukan 😔')
+		bot.reply_to(message, 'Peribahasa tidak ditemukan kak {}'.format(emojis.sad()))
 
 
 
