@@ -1,4 +1,4 @@
-# installation
+# Installation :bulb:
 ```bash
 git clone https://github.com/ctrlbzul/telegramBot.git
 cd telegramBot
@@ -9,7 +9,7 @@ python3
 pip3 install -r requirements.txt
 ```
 
-## file information
+## File Information :information_source:
 ```
 telegramBot
 ├── emojis.py
