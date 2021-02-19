@@ -1,5 +1,6 @@
 # --------------- TOKEN BOT TELEGRAM ---------------
 bot_token = "1660574633:AAG4qU37ciBZp49Kc0OX4GAWH3GUeLyCCUw"
+commands_telebot = ['start', 'hi', 'menu', 'jenis', 'peribahasa']
 
 # ----- function-function untuk return jenis-jenis peribahasa -----
 import random
