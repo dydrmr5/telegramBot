@@ -12,6 +12,11 @@ bot = telebot.TeleBot(peribahasa.bot_token, parse_mode = None)
 # bot reply : perkenalan
 @bot.message_handler(commands = [f'{peribahasa.commands_telebot[0]}']) #start
 def sentStartInfo(message):
+	#get information user
+	print(f"user id :{message.from_user.id}")
+	print(f"user name :{message.from_user.first_name}")
+	print(f"message: {message.text}")
+	#------------------------------------
 	user = message.from_user.first_name
 	bot.reply_to(message, f'{menu_reply.botGreetings()} {user} {emojis.handWaves()}.\n{menu_reply.botStart()}')
 
@@ -52,4 +57,5 @@ def showPeribahasa(message):
 
 
 print('Bot is RUNNING')
+
 bot.polling()
