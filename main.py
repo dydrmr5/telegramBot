@@ -13,9 +13,9 @@ bot = telebot.TeleBot(peribahasa.bot_token, parse_mode = None)
 @bot.message_handler(commands = [f'{peribahasa.commands_telebot[0]}']) #start
 def sentStartInfo(message):
 	#get information user
-	print(f"user id :{message.from_user.id}")
-	print(f"user name :{message.from_user.first_name}")
-	print(f"message: {message.text}")
+	print(f"User ID\t:{message.from_user.id}")
+	print(f"Username\t:{message.from_user.first_name}")
+	print(f"Message:\t{message.text}")
 	#------------------------------------
 	user = message.from_user.first_name
 	bot.reply_to(message, f'{menu_reply.botGreetings()} {user} {emojis.handWaves()}.\n{menu_reply.botStart()}')
