@@ -13,7 +13,8 @@ def botStart():
 	Peribahasa adalah kelompok kata atau kalimat\
 	yang tetap susunannya, biasanya mengiaskan\
 	maksud tertentu kak (dalam peribahasa termasuk\
-	juga bidal, ungkapan, dan perumpamaan).
+	juga bidal, ungkapan, dan perumpamaan).\
+	\n\nKetik /menu untuk melihat seluruh perintah kak
 	'''.format(emojis.happy(), emojis.waving_hands[4], emojis.pointing_hands[4])
 	return tentang_bot
 
@@ -41,5 +42,7 @@ def botShowPeribahasa():
 	\n/peribahasa_bidal\
 	\n/peribahasa_pepatah\
 	\n/peribahasa_perumpamaan\
+	\n/peribahasa_tamsil\
+	\n/peribahasa_semboyan\
 	'''.format(emojis.pointing_hands[4])
 	return list_peribahasa
