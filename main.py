@@ -1,4 +1,4 @@
-# import modules and files
+# import module dan file
 import telebot
 import random
 import peribahasa
@@ -8,7 +8,7 @@ import emojis
 # TELEGRAM BOT TOKEN
 bot = telebot.TeleBot(peribahasa.bot_token, parse_mode = None)
 
-# ---------- MAIN MENU ----------
+# ---------- BOT MENU ----------
 # bot reply : perkenalan
 @bot.message_handler(commands = [f'{peribahasa.commands_telebot[0]}']) # /start
 def sentStartInfo(message):
@@ -36,24 +36,11 @@ def sentInfo(message):
 def sentMenu(message):
 	bot.reply_to(message, menu_reply.botShowPeribahasa())
 
-
-# ---------- menu (jenis-jenis) peribahasa ----------
-# bot reply : pilih jenis peribahasa menu
+# bot reply : tampilkan pengertian dan contoh dari jenis peribahasa (yang diinput user)
 @bot.message_handler(commands = [f'{peribahasa.commands_telebot[4]}']) # /peribahasa
 def showPeribahasa(message):
 	perintah = message.text[11:]
-	if 'bidal' in perintah.lower():
-		bot.reply_to(message, peribahasa.getBidal())
-	elif 'pepatah' in perintah.lower():
-		bot.reply_to(message, peribahasa.getPepatah())
-	elif 'perumpamaan' in perintah.lower():
-		bot.reply_to(message, peribahasa.getPerumpamaan())
-	elif 'tamsil' in perintah.lower():
-		bot.reply_to(message, peribahasa.getTamsil())
-	elif 'semboyan' in perintah.lower():
-		bot.reply_to(message, peribahasa.getSemboyan())
-	else:
-		bot.reply_to(message, 'Peribahasa tidak ditemukan kak {}'.format(emojis.sad()))
+	bot.reply_to(message, peribahasa.getKategoriPeribahasa(perintah))
 
 
 
