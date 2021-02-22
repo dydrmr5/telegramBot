@@ -1,4 +1,6 @@
+# import module
 import random
+# import file
 import emojis
 
 # function first reply bot saat start (/start)

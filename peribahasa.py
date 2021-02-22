@@ -1,13 +1,11 @@
-# import module dan file
+# import module
 import random
+# import file
 import emojis
 
 # --------------- TOKEN BOT TELEGRAM DAN COMMANDS ---------------
-bot_token = "1660574633:AAG4qU37ciBZp49Kc0OX4GAWH3GUeLyCCUw"
+BOT_TOKEN = "1660574633:AAG4qU37ciBZp49Kc0OX4GAWH3GUeLyCCUw"
 commands_telebot = ['start', 'hi', 'menu', 'jenis', 'peribahasa', 'pengertian']
-
-# ----- function-function untuk return jenis-jenis peribahasa -----
-
 
 # function : print garis lurus
 def printLine():

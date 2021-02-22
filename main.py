@@ -1,18 +1,19 @@
-# import module dan file
+# import module
 import telebot
 import random
+# import file
 import peribahasa
 import menu_reply
 import emojis
 
 # TELEGRAM BOT TOKEN
-bot = telebot.TeleBot(peribahasa.bot_token, parse_mode = None)
+bot = telebot.TeleBot(peribahasa.BOT_TOKEN, parse_mode = None)
 
 # ---------- BOT MENU ----------
 # bot reply : perkenalan
 @bot.message_handler(commands = [f'{peribahasa.commands_telebot[0]}']) # /start
 def sentStartInfo(message):
-	#get information user
+	# get user info
 	print(f"User ID  : {message.from_user.id}")
 	print(f"Username : {message.from_user.first_name}")
 	print(f"Message  : {message.text}")
@@ -42,11 +43,6 @@ def showPeribahasa(message):
 	perintah = message.text[11:]
 	bot.reply_to(message, peribahasa.getKategoriPeribahasa(perintah))
 
-
-
-
-
-
+# run the bot
 print('Bot is RUNNING')
-
 bot.polling()
