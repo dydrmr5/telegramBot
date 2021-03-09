@@ -12,6 +12,7 @@ pip3 install -r requirements.txt
 ## File Information :information_source:
 ```
 telegramBot
+├── data.txt
 ├── emojis.py
 ├── LICENSE
 ├── main.py
@@ -19,10 +20,15 @@ telegramBot
 ├── peribahasa.py
 ├── README.md
 ├── requirements.txt
+├── skripsi_docs
+│   ├── BAB_II_SKRIPSI_ZULFIKRIRY.docx
+│   ├── BAB_I_SKRIPSI_ZULFIKRIRY.docx
+│   └── main.py
 └── txt_files
     ├── bidal.txt
     ├── halo.txt
     ├── pepatah.txt
     ├── perumpamaan.txt
-    └── user_say_greeting_halo.txt
+    ├── semboyan.txt
+    └── tamsil.txt
 ```
