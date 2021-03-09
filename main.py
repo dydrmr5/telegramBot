@@ -2,10 +2,29 @@
 import telebot
 from telebot import types
 import random
+import datetime
+import platform
+import os
+from sys import platform as _platform
+
+
+
 # import file
 import peribahasa
 import menu_reply
 import emojis
+
+
+def save_log(message, command_user):
+	tanggal = datetime.datetime.now()
+	tanggal = tanggal.strftime('%d-%B-%Y')
+
+	userId = message.chat.id
+	username = message.chat.first_name
+	text_information = f'{tanggal}, {userId}, {username}, {command_user}\n'
+	save_data_log = open('data.txt', 'a')
+	save_data_log.write(text_information)
+	save_data_log.close()
 
 #@peribahasa_bot
 
@@ -20,6 +39,7 @@ def sentStartInfo(message):
 	print(f"User ID  : {message.from_user.id}")
 	print(f"Username : {message.from_user.first_name}")
 	print(f"Message  : {message.text}")
+	save_log(message, f'{peribahasa.commands_telebot[0]}')
 	#------------------------------------
 	user = message.from_user.first_name
 	#bot.reply_to(message, f'{menu_reply.botGreetings()} {user} {emojis.handWaves()}.\n{menu_reply.botStart()}')
@@ -64,15 +84,30 @@ def showPeribahasa(message):
 
 @bot.message_handler(func = lambda message: True)
 def custom_message(message):
+	print(f"User ID  : {message.from_user.id}")
+	print(f"Username : {message.from_user.first_name}")
+	print(f"Message  : {message.text}")
+
+	save_log(message, message.text)
 	if "hai" in message.text:
-		user = message.from_user.first_name
-		print(f"User ID  : {message.from_user.id}")
-		print(f"Username : {message.from_user.first_name}")
-		print(f"Message  : {message.text}")
+		user = message.from_user.first_name	
 		bot.reply_to(message, f'{menu_reply.botGreetings()} {user} {emojis.handWaves()}.')
 
 	elif "Pepatah" in message.text:
 		bot.reply_to(message, f'pepatah')
+
+
 # run the bot
-print('Bot is RUNNING')
+
+if _platform == "linux" or _platform == "linux2":
+	os.system("clear")
+elif _platform == "darwin":
+	os.system("clear")
+else:
+	os.system("cls")
+
+print('-----------------------')
+print('bot running !')
+print(f"date :{datetime.datetime.now().strftime('%d-%B-%Y')}")
+print(f'running on : {platform.system()}')
 bot.polling()
