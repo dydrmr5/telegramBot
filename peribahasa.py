@@ -3,6 +3,8 @@ import random
 # import file
 import emojis
 
+
+
 # --------------- TOKEN BOT TELEGRAM DAN COMMANDS ---------------
 BOT_TOKEN = "1660574633:AAG4qU37ciBZp49Kc0OX4GAWH3GUeLyCCUw"
 commands_telebot = ['start', 'hi', 'menu', 'jenis', 'peribahasa', 'pengertian']
