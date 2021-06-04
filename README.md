@@ -32,3 +32,16 @@ telegramBot
     ├── semboyan.txt
     └── tamsil.txt
 ```
+
+# installation for raspbian
+recommended using raspberry Pi 4 model B
+
+## requirement
+for requirement telebot
+- python3
+- pyTelegramBotApi
+
+## running program
+```bash
+python3 main.py
+```
