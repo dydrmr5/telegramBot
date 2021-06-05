@@ -93,12 +93,19 @@ def custom_message(message):
 		user = message.from_user.first_name	
 		bot.reply_to(message, f'{menu_reply.botGreetings()} {user} {emojis.handWaves()}.')
 
+	if "Bidal" in message.text:
+		bot.reply_to(message, f'{peribahasa.getBidal()}')
+
 	elif "Pepatah" in message.text:
-		bot.reply_to(message, f'pepatah')
+		bot.reply_to(message, f'{peribahasa.getPepatah()}')
 
 
-# run the bot
-
+"""
+get platform of machine
+linux for linux kernel
+darwin for macOs
+NT for windows
+"""
 if _platform == "linux" or _platform == "linux2":
 	os.system("clear")
 elif _platform == "darwin":
