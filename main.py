@@ -113,8 +113,21 @@ elif _platform == "darwin":
 else:
 	os.system("cls")
 
+
+"""
+AM = start from 00:00 to 11:59
+PM = 12:00 to 23:59
+"""
+current_time = datetime.datetime.now().strftime('%H:%M')
+if current_time <= str("11:59"):
+	period_time = 'AM'
+else:
+	period_time = 'PM'
+
+
 print('-----------------------')
 print('bot running !')
 print(f"date :{datetime.datetime.now().strftime('%d-%B-%Y')}")
+print(f"current time : {datetime.datetime.now().strftime('%H:%M')} {period_time}")
 print(f'running on : {platform.system()}')
 bot.polling()
