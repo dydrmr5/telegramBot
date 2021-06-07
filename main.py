@@ -1,7 +1,6 @@
 # import module
 import telebot
 from telebot import types
-import random
 import datetime
 import platform
 import os
