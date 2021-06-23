@@ -7,7 +7,6 @@ import os
 from sys import platform as _platform
 
 
-
 # import file
 import peribahasa
 import menu_reply
