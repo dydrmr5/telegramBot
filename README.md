@@ -12,7 +12,6 @@ pip3 install -r requirements.txt
 ## File Information :information_source:
 ```
 telegramBot
-├── data.txt
 ├── emojis.py
 ├── LICENSE
 ├── main.py
@@ -24,6 +23,7 @@ telegramBot
 │   ├── BAB_II_SKRIPSI_ZULFIKRIRY.docx
 │   ├── BAB_I_SKRIPSI_ZULFIKRIRY.docx
 │   └── main.py
+├── test_run.py
 └── txt_files
     ├── bidal.txt
     ├── halo.txt
