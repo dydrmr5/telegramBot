@@ -1,3 +1,7 @@
+# telegram bot
+[![python testing](https://img.shields.io/github/workflow/status/ctrlbzul/telegramBot/TelegramBot-testing?label=python%20testing&style=for-the-badge)](https://github.com/ctrlbzul/telegramBot/actions/workflows/python-app.yml)
+
+
 # Installation :bulb:
 ```bash
 git clone https://github.com/ctrlbzul/telegramBot.git
