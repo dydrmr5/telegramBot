@@ -1,5 +1,5 @@
 # telegram bot
-[![license](https://img.shields.io/github/license/ctrlbzul/telegramBot?style=for-the-badge)](.LICENSE)
+[![license](https://img.shields.io/github/license/ctrlbzul/telegramBot?style=for-the-badge)](LICENSE)
 [![python testing](https://img.shields.io/github/workflow/status/ctrlbzul/telegramBot/TelegramBot-testing?label=python%20testing&style=for-the-badge)](https://github.com/ctrlbzul/telegramBot/actions/workflows/python-app.yml)
 
 
