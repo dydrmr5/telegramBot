@@ -123,9 +123,14 @@ else:
 	period_time = 'PM'
 
 
-print('-----------------------')
-print('bot running !')
-print(f"date :{datetime.datetime.now().strftime('%d-%B-%Y')}")
-print(f"current time : {datetime.datetime.now().strftime('%H:%M')} {period_time}")
-print(f'running on : {platform.system()}')
-bot.polling()
+try:
+	print('-----------------------')
+	print('bot running !')
+	print(f"date :{datetime.datetime.now().strftime('%d-%B-%Y')}")
+	print(f"current time : {datetime.datetime.now().strftime('%H:%M')} {period_time}")
+	print(f'running on : {platform.system()}')
+	bot.polling()
+except Exception as err:
+	print(f"exception error : {err}")
+except KeyboardInterrupt:
+	print("exiting program")
