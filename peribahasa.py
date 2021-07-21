@@ -70,7 +70,7 @@ def getSemboyan():
 
 # function : get kategori peribahasa sesuai input (perintah) user,
 # lalu return function pengertian dan contoh peribahasa 
-def getKategoriPeribahasa(user_input):
+def getKategoriPeribahasa(user_input) -> str:
 	if 'bidal' in user_input.lower():
 		result = getBidal()
 	elif 'pepatah' in user_input.lower():
