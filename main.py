@@ -4,13 +4,14 @@ from telebot import types
 import datetime
 import platform
 import os
+import logging
 from sys import platform as _platform
 
 # import file
 import telebot_data as td
 
 # TELEGRAM BOT TOKEN
-bot = telebot.TeleBot(td.BOT_TOKEN, parse_mode = None)
+bot = telebot.TeleBot(td.BOT_TOKEN, parse_mode=None)
 
 def save_log(message, user_command):
 	# menyimpan info aktivitas user ke data.txt
@@ -140,4 +141,8 @@ print(f'''@peribahasa_bot is running !\
 	\nTime : {datetime.datetime.now().strftime('%H:%M')} {time_periode}\
 	\nRunning on : {platform.system()}''')
 print(td.print_line())
-bot.polling()
+
+try:
+	bot.polling()
+except Exception as error:
+	logging.error("error: %s" %error)

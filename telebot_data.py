@@ -84,8 +84,12 @@ def show_pengertian_peribahasa():
 	'''
 	return pengertian
 
+
 def print_line():
-	# menampilkan garis pembatas
+	"""
+	>>> print_line()
+	────────────────────
+	"""
 	line = u'\u2500' * 20
 	
 	return line
@@ -153,17 +157,17 @@ def get_semboyan():
 
 def get_peribahasa(user_input):
 	# cek kategori sesuai input user, lalu tampilkan contoh peribahasanya
-	if 'bidal' in user_input.lower():
+	if "bidal" in user_input.lower():
 		result = get_bidal()
-	elif 'pepatah' in user_input.lower():
+	elif "pepatah" in user_input.lower():
 		result = get_pepatah()
-	elif 'perumpamaan' in user_input.lower():
+	elif "perumpamaan" in user_input.lower():
 		result = get_perumpamaan()
-	elif 'tamsil' in user_input.lower():
+	elif "tamsil" in user_input.lower():
 		result = get_tamsil()
-	elif 'semboyan' in user_input.lower():
+	elif "semboyan" in user_input.lower():
 		result = get_semboyan()
 	else:
-		result = (f'Peribahasa tidak ditemukan {sad_emoji()}')
+		result = (f"Peribahasa tidak ditemukan {sad_emoji()}")
 
 	return result
