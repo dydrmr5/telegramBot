@@ -14,7 +14,6 @@ import telebot_data as td
 # TELEGRAM BOT TOKEN
 bot = telebot.TeleBot(td.BOT_TOKEN, parse_mode=None)
 
-
 def save_log(message, user_command):
     # menyimpan info aktivitas user ke data.txt
     tanggal = datetime.datetime.now()
@@ -112,6 +111,7 @@ def show_peribahasa_bidal(message):
         bot.reply_to(message, td.get_bidal())
     except Exception as error_message:
         bot.reply_to(message, td.ERROR_MESSAGE)
+        logging.basicConfig(level = logging.error)
         logging.error(f"error: {error_message}")
 
 
@@ -122,6 +122,7 @@ def show_peribahasa_pepatah(message):
         bot.reply_to(message, td.get_pepatah())
     except Exception as error_message:
         bot.reply_to(message, td.ERROR_MESSAGE)
+        logging.basicConfig(level = logging.error)
         logging.error(f"error : {error_message}")
 
 
@@ -131,6 +132,7 @@ def show_peribahasa_perumpamaan(message):
         bot.reply_to(message, td.get_pepatah())
     except Exception as error_message:
         bot.reply_to(message, td.ERROR_MESSAGE)
+        logging.basicConfig(level = logging.error)
         logging.error(f"error: {error_message}")
 
 
@@ -140,6 +142,7 @@ def show_peribahasa_tamsil(message):
         bot.reply_to(message, td.get_tamsil())
     except Exception as error_message:
         bot.reply_to(message, td.ERROR_MESSAGE)
+        logging.basicConfig(level = logging.error)
         logging.error(f"error: {error_message}")
 
 
@@ -149,6 +152,7 @@ def show_peribahasa_semboyan(message):
         bot.reply_to(message, td.get_semboyan())
     except Exception as error_message:
         bot.reply_to(message, td.ERROR_MESSAGE)
+        logging.basicConfig(level = logging.error)
         logging.error(f"error : {error_message}")
 
 
@@ -206,11 +210,16 @@ try:
         \nRunning on : {platform.system()}"""
     )
     print(td.print_line())
+    logging.basicConfig(format = '%(asctime)s - %(message)s' ,level=logging.INFO)
+    logging.info('server running!')
 
     bot.polling()
 except Exception as error:
+    logging.basicConfig(level = logging.error)
     logging.error("error : %s" % error)
 except BaseException as error_base_exception:
+    logging.basicConfig(level = logging.error)
     logging.error("error : %s" % error_base_exception)
 except KeyboardInterrupt as keyboard:
+    logging.basicConfig(level = logging.error)
     logging.error("error keyboard interrupt : %s" % keyboard)
