@@ -47,3 +47,6 @@ python3 main.py
 
 ## Features Update
 for information updates or adding more features,  you can see at [issue by labeled enhacement](https://github.com/ctrlbzul/telegramBot/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+## peribahasa bot version
+[version 1.0.0 stable](https://github.com/dydrmr5/telegramBot/releases/tag/v1.0.0)
