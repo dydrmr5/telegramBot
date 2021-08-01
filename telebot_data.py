@@ -8,7 +8,23 @@ pointing_hands = ["🤙", "👈", "👉", "👆", "👇", "☝️", "👍"]
 
 # COMMANDS DAN TOKEN BOT TELEGRAM
 BOT_TOKEN = "1660574633:AAG4qU37ciBZp49Kc0OX4GAWH3GUeLyCCUw"
-bot_commands = ['start', 'hi', 'menu', 'jenis', 'peribahasa', 'pengertian', 'lapor']
+ERROR_MESSAGE = "Peribahasa tidak ditemukan"
+bot_commands = [
+	'start', 
+	'hi', 
+	'menu', 
+	'jenis', 
+	'peribahasa', 
+	'pengertian', 
+	'lapor', 
+	'peribahasa_bidal',
+	'peribahasa_pepatah',
+	'peribahasa_perumpamaan',
+	'peribahasa_tamsil',
+	'peribahasa_semboyan'
+]
+
+
 
 # EMOJIS FUNCTIONS
 def happy_emoji():
@@ -62,8 +78,17 @@ def bot_show_menu():
 	return list_menu 
 
 
-def bot_show_peribahasa():
+def bot_show_peribahasa(command):
 	# mereply daftar jenis-jenis peribahasa ke user (/jenis)
+	"""
+	>>> bot_show_peribahasa('jenis')
+	Jenis - Jenis peribahasa 👇
+	peribahasa_biddal
+	peribahasa pepatah
+	peribahasa perumpamaan
+	peribahasa tamsil
+	peribahasa semboyan
+	"""
 	list_peribahasa = f'''Jenis - Jenis Peribahasa {pointing_hands[4]}\
 	\n/peribahasa_bidal\
 	\n/peribahasa_pepatah\
@@ -72,7 +97,6 @@ def bot_show_peribahasa():
 	\n/peribahasa_semboyan\
 	'''
 	return list_peribahasa
-
 
 def show_pengertian_peribahasa():
 	# mereply (pengertian) apa itu peribahasa ke user (/pengertian)
@@ -86,10 +110,6 @@ def show_pengertian_peribahasa():
 
 
 def print_line():
-	"""
-	>>> print_line()
-	────────────────────
-	"""
 	line = u'\u2500' * 20
 	
 	return line
