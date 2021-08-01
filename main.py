@@ -210,16 +210,16 @@ try:
         \nRunning on : {platform.system()}"""
     )
     print(td.print_line())
-    logging.basicConfig(format = '%(asctime)s - %(message)s' ,level=logging.INFO)
+    logging.basicConfig(format = '%(asctime)s - %(message)s' , level=logging.INFO)
     logging.info('server running!')
 
     bot.polling()
 except Exception as error:
-    logging.basicConfig(level = logging.error)
+    logging.basicConfig(level=logging.error)
     logging.error("error : %s" % error)
 except BaseException as error_base_exception:
-    logging.basicConfig(level = logging.error)
+    logging.basicConfig(level=logging.error)
     logging.error("error : %s" % error_base_exception)
 except KeyboardInterrupt as keyboard:
-    logging.basicConfig(level = logging.error)
+    logging.basicConfig(level=logging.error)
     logging.error("error keyboard interrupt : %s" % keyboard)

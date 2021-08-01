@@ -16,5 +16,9 @@ who fixed bugs, added features, and took part in additions that made it even bet
  git push origin {you-custom-branch}
  ```
 
+**before push the change, check the lint by using flake8**
+```bash
+flake8 . --ignore=E501,E203,W503,E101,W191,F541 --max-line-length=88 --show-source
+```
 
 we are very grateful to those of you who have contributed to us, hopefully we can improve and add more features for the better
