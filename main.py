@@ -1,11 +1,12 @@
 # import module
+import datetime
+import logging
+import os
+import platform
+from sys import platform as _platform
+
 import telebot
 from telebot import types
-import datetime
-import platform
-import os
-import logging
-from sys import platform as _platform
 
 # import file
 import telebot_data as td
@@ -172,18 +173,6 @@ def custom_messages(message):
         bot.reply_to(message, f"{td.bot_show_menu()}")
 
 
-"""
-get platform of machine
-linux for linux kernel
-darwin for macOs
-NT for windows
-"""
-if _platform == "linux" or _platform == "linux2" or _platform == "darwin":
-    os.system("clear")
-else:
-    os.system("cls")
-
-
 # check time periode (AM or PM)
 """
 AM = start from 00:00 to 11:59
@@ -195,17 +184,33 @@ if current_time <= str("11:59"):
 else:
     time_periode = "PM"
 
-# print bot running info on terminal
-print(td.print_line())
-print(
-    f"""@peribahasa_bot is running !\
-	\nDate : {datetime.datetime.now().strftime('%d %B %Y')}\
-	\nTime : {datetime.datetime.now().strftime('%H:%M')} {time_periode}\
-	\nRunning on : {platform.system()}"""
-)
-print(td.print_line())
 
 try:
+    """
+    get platform of machine
+    linux for linux kernel
+    darwin for macOs
+    NT for windows"""
+
+    if _platform in ["linux", "linux2", "darwin"]:
+        os.system("clear")
+    else:
+        os.system("cls")
+        # print bot running info on terminal
+
+    print(td.print_line())
+    print(
+        f"""@peribahasa_bot is running !\
+        \nDate : {datetime.datetime.now().strftime('%d %B %Y')}\
+        \nTime : {datetime.datetime.now().strftime('%H:%M')} {time_periode}\
+        \nRunning on : {platform.system()}"""
+    )
+    print(td.print_line())
+
     bot.polling()
 except Exception as error:
-    logging.error("error: %s" % error)
+    logging.error("error : %s" % error)
+except BaseException as error_base_exception:
+    logging.error("error : %s" % error_base_exception)
+except KeyboardInterrupt as keyboard:
+    logging.error("error keyboard interrupt : %s" % keyboard)
