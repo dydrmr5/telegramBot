@@ -14,7 +14,6 @@ bot_commands = [
     "hi",
     "menu",
     "jenis",
-    "peribahasa",
     "pengertian",
     "lapor",
     "peribahasa_bidal",
@@ -47,11 +46,11 @@ def waving_hand():
 def bot_start():
     # reply dari bot saat pertama dimulai (distart)
     tentang_bot = f"""Saya adalah bot Peribahasa Indonesia.\
-	\nSaya bertugas memberikan informasi\
-	\ntentang peribahasa Indonesia, untuk\
-	\nmenambah pengetahuan kakak {happy_emoji()}.\
-	\n\nPilih /menu untuk melihat daftar perintah
-	"""
+		\nSaya bertugas memberikan informasi\
+		\ntentang peribahasa Indonesia, untuk\
+		\nmenambah pengetahuan kakak {happy_emoji()}.\
+		\n\nPilih /menu untuk melihat daftar perintah
+		"""
     return tentang_bot
 
 
@@ -68,12 +67,12 @@ def bot_greetings():
 def bot_show_menu():
     # mereply daftar menu bot ke user (/menu)
     list_menu = f"""DAFTAR PERINTAH {pointing_hands[4]}\
-	\n/pengertian = Pengertian peribahasa\
-	\n/hi = Menyapa bot\
-	\n/menu = Daftar seluruh perintah\
-	\n/jenis = Jenis-jenis peribahasa\
-	\n/lapor = Bicara ke developer\
-	"""
+		\n/pengertian = Pengertian peribahasa\
+		\n/hi = Menyapa bot\
+		\n/menu = Daftar seluruh perintah\
+		\n/jenis = Jenis-jenis peribahasa\
+		\n/lapor = Bicara ke developer\
+		"""
     return list_menu
 
 
@@ -82,30 +81,30 @@ def bot_show_peribahasa(command):
     """
     >>> bot_show_peribahasa('jenis')
     Jenis - Jenis peribahasa 👇
-    peribahasa_biddal
+    peribahasa_bidal
     peribahasa pepatah
     peribahasa perumpamaan
     peribahasa tamsil
     peribahasa semboyan
     """
     list_peribahasa = f"""Jenis - Jenis Peribahasa {pointing_hands[4]}\
-	\n/peribahasa_bidal\
-	\n/peribahasa_pepatah\
-	\n/peribahasa_perumpamaan\
-	\n/peribahasa_tamsil\
-	\n/peribahasa_semboyan\
-	"""
+		\n/peribahasa_pepatah\
+		\n/peribahasa_bidal\
+		\n/peribahasa_perumpamaan\
+		\n/peribahasa_tamsil\
+		\n/peribahasa_semboyan\
+		"""
     return list_peribahasa
 
 
 def show_pengertian_peribahasa():
     # mereply (pengertian) apa itu peribahasa ke user (/pengertian)
     pengertian = f"""Apa Itu Peribahasa ?\
-	\nMenurut Kamus Besar Bahasa Indonesia,\
-	\nPeribahasa adalah kelompok kata atau\
-	\nkalimat yang tetap susunannya, dan\
-	\nbiasanya mengiaskan maksud tertentu.\
-	"""
+		\nMenurut Kamus Besar Bahasa Indonesia,\
+		\nPeribahasa adalah kelompok kata atau\
+		\nkalimat yang tetap susunannya, dan\
+		\nbiasanya mengiaskan maksud tertentu.\
+		"""
     return pengertian
 
 
