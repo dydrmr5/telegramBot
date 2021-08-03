@@ -21,7 +21,7 @@ def save_log(message, user_command):
 
     user_id = message.chat.id
     username = message.chat.first_name
-    text_info = f"{tanggal}, {user_id}, {username}, {user_command}\n"
+    text_info = "%s, %s, %s, %s\n" % (tanggal, user_id, username, user_command)
     save_data_log = open("data.txt", "a")
     save_data_log.write(text_info)
     save_data_log.close()
@@ -31,10 +31,12 @@ def save_log(message, user_command):
 @bot.message_handler(commands=[f"{td.bot_commands[0]}"])
 def get_user_info(message):
     # dapatkan info user
-    print(f"User ID  : {message.from_user.id}")
-    print(f"Username : {message.from_user.first_name}")
-    print(f"Command  : {message.text}")
-    save_log(message, f"{td.bot_commands[0]}")
+    print(
+		"""User ID : %s\
+		\nUsername : %s\
+		\nCommand : %s""" % (message.from_user.id, message.from_user.first_name, message.text)
+	)
+	save_log(message, "%s" % td.bot_commands[0])
 
     user = message.from_user.first_name
     bot.send_message(
@@ -75,21 +77,14 @@ def set_keyboard_button(message):
     )
 
 
-# bot commands = /peribahasa
-@bot.message_handler(commands=[f"{td.bot_commands[4]}"])
-def show_peribahasa(message):
-    perintah = message.text[11:]
-    bot.reply_to(message, td.get_peribahasa(perintah))
-
-
 # bot commands = /pengertian
-@bot.message_handler(commands=[f"{td.bot_commands[5]}"])
+@bot.message_handler(commands=[f"{td.bot_commands[4]}"])
 def show_pengertian(message):
     bot.reply_to(message, td.show_pengertian_peribahasa())
 
 
 # bot commands = /lapor
-@bot.message_handler(commands=[f"{td.bot_commands[6]}"])
+@bot.message_handler(commands=[f"{td.bot_commands[5]}"])
 def report_to_dev(message):
     button = types.InlineKeyboardMarkup()
     dev_info = types.InlineKeyboardButton(
@@ -105,62 +100,64 @@ def report_to_dev(message):
 
 
 # bot commands = /peribahasa_bidal
-@bot.message_handler(commands=[f"{td.bot_commands[7]}"])
+@bot.message_handler(commands=[f"{td.bot_commands[6]}"])
 def show_peribahasa_bidal(message):
     try:
         bot.reply_to(message, td.get_bidal())
     except Exception as error_message:
         bot.reply_to(message, td.ERROR_MESSAGE)
         logging.basicConfig(level = logging.error)
-        logging.error(f"error: {error_message}")
+        logging.error("error: %s" % error_message)
 
 
-# bot commands = /peribahasa_peatah
-@bot.message_handler(commands=[f"{td.bot_commands[8]}"])
+# bot commands = /peribahasa_pepatah
+@bot.message_handler(commands=[f"{td.bot_commands[7]}"])
 def show_peribahasa_pepatah(message):
     try:
         bot.reply_to(message, td.get_pepatah())
     except Exception as error_message:
         bot.reply_to(message, td.ERROR_MESSAGE)
         logging.basicConfig(level = logging.error)
-        logging.error(f"error : {error_message}")
+        logging.error("error: %s" % error_message)
 
 
-@bot.message_handler(commands=[f"{td.bot_commands[9]}"])
+@bot.message_handler(commands=[f"{td.bot_commands[8]}"])
 def show_peribahasa_perumpamaan(message):
     try:
         bot.reply_to(message, td.get_pepatah())
     except Exception as error_message:
         bot.reply_to(message, td.ERROR_MESSAGE)
         logging.basicConfig(level = logging.error)
-        logging.error(f"error: {error_message}")
+        logging.error("error: %s" % error_message)
 
 
-@bot.message_handler(commands=[f"{td.bot_commands[10]}"])
+@bot.message_handler(commands=[f"{td.bot_commands[9]}"])
 def show_peribahasa_tamsil(message):
     try:
         bot.reply_to(message, td.get_tamsil())
     except Exception as error_message:
         bot.reply_to(message, td.ERROR_MESSAGE)
         logging.basicConfig(level = logging.error)
-        logging.error(f"error: {error_message}")
+        logging.error("error: %s" % error_message)
 
 
-@bot.message_handler(commands=[f"{td.bot_commands[11]}"])
+@bot.message_handler(commands=[f"{td.bot_commands[10]}"])
 def show_peribahasa_semboyan(message):
     try:
         bot.reply_to(message, td.get_semboyan())
     except Exception as error_message:
         bot.reply_to(message, td.ERROR_MESSAGE)
         logging.basicConfig(level = logging.error)
-        logging.error(f"error : {error_message}")
+        logging.error("error: %s" % error_message)
 
 
 @bot.message_handler(func=lambda message: True)
 def custom_messages(message):
-    print(f"User ID  : {message.from_user.id}")
-    print(f"Username : {message.from_user.first_name}")
-    print(f"Message  : {message.text}")
+    print(
+		"""User ID : %s\
+		\nUsername : %s\
+		\nCommand : %s""" % (message.from_user.id, message.from_user.first_name, message.text)
+	)
     save_log(message, message.text)
 
     if "Bidal" in message.text:
@@ -200,19 +197,19 @@ try:
         os.system("clear")
     else:
         os.system("cls")
-        # print bot running info on terminal
 
+    # print bot running info on terminal
     print(td.print_line())
     print(
-        f"""@peribahasa_bot is running !\
-        \nDate : {datetime.datetime.now().strftime('%d %B %Y')}\
-        \nTime : {datetime.datetime.now().strftime('%H:%M')} {time_periode}\
-        \nRunning on : {platform.system()}"""
+	    """@peribahasa_bot is running !\
+	    \nDate : %s\
+	    \nTime : %s %s\
+	    \nRunning on : %s""" % (datetime.datetime.now().strftime('%d %B %Y'), datetime.datetime.now().strftime('%H:%M'), time_periode, platform.system())
     )
     print(td.print_line())
+    
     logging.basicConfig(format = '%(asctime)s - %(message)s' , level=logging.INFO)
     logging.info('server running!')
-
     bot.polling()
 except Exception as error:
     logging.basicConfig(level=logging.error)
