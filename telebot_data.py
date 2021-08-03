@@ -14,7 +14,6 @@ bot_commands = [
 	'hi', 
 	'menu', 
 	'jenis', 
-	'peribahasa', 
 	'pengertian', 
 	'lapor', 
 	'peribahasa_bidal',
@@ -23,7 +22,6 @@ bot_commands = [
 	'peribahasa_tamsil',
 	'peribahasa_semboyan'
 ]
-
 
 
 # EMOJIS FUNCTIONS
@@ -68,13 +66,13 @@ def bot_greetings():
 
 def bot_show_menu():
 	# mereply daftar menu bot ke user (/menu)
-	list_menu = f'''DAFTAR PERINTAH {pointing_hands[4]}\
-	\n/pengertian = Pengertian peribahasa\
-	\n/hi = Menyapa bot\
-	\n/menu = Daftar seluruh perintah\
-	\n/jenis = Jenis-jenis peribahasa\
-	\n/lapor = Bicara ke developer\
-	'''
+	list_menu = """DAFTAR PERINTAH %s\
+		\n/pengertian = Pengertian peribahasa\
+		\n/hi = Menyapa bot\
+		\n/menu = Daftar seluruh perintah\
+		\n/jenis = Jenis-jenis peribahasa\
+		\n/lapor = Bicara ke developer\
+		""" % pointing_hands[4]
 	return list_menu 
 
 
@@ -83,35 +81,37 @@ def bot_show_peribahasa(command):
 	"""
 	>>> bot_show_peribahasa('jenis')
 	Jenis - Jenis peribahasa 👇
-	peribahasa_biddal
+	peribahasa_bidal
 	peribahasa pepatah
 	peribahasa perumpamaan
 	peribahasa tamsil
 	peribahasa semboyan
 	"""
-	list_peribahasa = f'''Jenis - Jenis Peribahasa {pointing_hands[4]}\
-	\n/peribahasa_bidal\
-	\n/peribahasa_pepatah\
-	\n/peribahasa_perumpamaan\
-	\n/peribahasa_tamsil\
-	\n/peribahasa_semboyan\
-	'''
+	list_peribahasa = """Jenis - Jenis Peribahasa %s\
+		\n/peribahasa_pepatah\
+		\n/peribahasa_bidal\
+		\n/peribahasa_perumpamaan\
+		\n/peribahasa_tamsil\
+		\n/peribahasa_semboyan\
+		""" % pointing_hands[4]
 	return list_peribahasa
+
 
 def show_pengertian_peribahasa():
 	# mereply (pengertian) apa itu peribahasa ke user (/pengertian)
-	pengertian = f'''Apa Itu Peribahasa ?\
-	\nMenurut Kamus Besar Bahasa Indonesia,\
-	\nPeribahasa adalah kelompok kata atau\
-	\nkalimat yang tetap susunannya, dan\
-	\nbiasanya mengiaskan maksud tertentu.\
-	'''
+	pengertian = """Apa Itu Peribahasa ?\
+		\nMenurut Kamus Besar Bahasa Indonesia,\
+		\nPeribahasa adalah kelompok kata atau\
+		\nkalimat yang tetap susunannya, dan\
+		\nbiasanya mengiaskan maksud tertentu.\
+		"""
 	return pengertian
 
 
 def print_line():
+	# print unicode garis (-) tanpa spasi
+	# >>> --------------------
 	line = u'\u2500' * 20
-	
 	return line
 
 
@@ -124,7 +124,7 @@ def get_bidal():
 	for isi in read_bidal:
 		peribahasa_bidal.append(isi.strip())
 	random_bidal = "\n".join(rd.sample(peribahasa_bidal, 3))
-	return (f'{read_first_line}\nNih kak, 3 Peribahasa Bidal {eyeglasses_emojis[1]}\n{print_line()}\n{random_bidal}')
+	return ("%s\nNih kak, 3 Peribahasa Bidal %s\n%s\n%s" % (read_first_line, eyeglasses_emojis[1], print_line(), random_bidal))
 
 
 def get_pepatah():
@@ -136,7 +136,7 @@ def get_pepatah():
 	for isi in read_pepatah:
 		peribahasa_pepatah.append(isi.strip())
 	random_pepatah = "\n".join(rd.sample(peribahasa_pepatah, 3))
-	return (f'{read_first_line}\nNih kak, 3 Peribahasa Pepatah {eyeglasses_emojis[1]}\n{print_line()}\n{random_pepatah}')
+	return ("%s\nNih kak, 3 Peribahasa Pepatah %s\n%s\n%s" % (read_first_line, eyeglasses_emojis[1], print_line(), random_pepatah))
 
 
 def get_perumpamaan():
@@ -148,7 +148,7 @@ def get_perumpamaan():
 	for isi in read_perumpamaan:
 		peribahasa_perumpamaan.append(isi.strip())
 	random_perumpamaan = "\n".join(rd.sample(peribahasa_perumpamaan, 3))
-	return (f'{read_first_line}\nNih kak, 3 Peribahasa Perumpamaan {eyeglasses_emojis[1]}\n{print_line()}\n{random_perumpamaan}')
+	return ("%s\nNih kak, 3 Peribahasa Perumpamaan %s\n%s\n%s" % (read_first_line, eyeglasses_emojis[1], print_line(), random_perumpamaan))
 
 
 def get_tamsil():
@@ -160,7 +160,7 @@ def get_tamsil():
 	for isi in read_tamsil:
 		peribahasa_tamsil.append(isi.strip())
 	random_tamsil = "\n".join(rd.sample(peribahasa_tamsil, 3))
-	return (f'{read_first_line}\nNih kak, 3 Peribahasa Tamsil {eyeglasses_emojis[1]}\n{print_line()}\n{random_tamsil}')
+	return ("%s\nNih kak, 3 Peribahasa Tamsil %s\n%s\n%s" % (read_first_line, eyeglasses_emojis[1], print_line(), random_tamsil))
 
 
 def get_semboyan():
@@ -172,7 +172,7 @@ def get_semboyan():
 	for isi in read_semboyan:
 		peribahasa_semboyan.append(isi.strip())
 	random_semboyan = "\n".join(rd.sample(peribahasa_semboyan, 3))
-	return (f'{read_first_line}\nNih kak, 3 Peribahasa Semboyan {eyeglasses_emojis[1]}\n{print_line()}\n{random_semboyan}')
+	return ("%s\nNih kak, 3 Peribahasa Semboyan %s\n%s\n%s" % (read_first_line, eyeglasses_emojis[1], print_line(), random_semboyan))
 
 
 def get_peribahasa(user_input):
@@ -188,6 +188,6 @@ def get_peribahasa(user_input):
 	elif "semboyan" in user_input.lower():
 		result = get_semboyan()
 	else:
-		result = (f"Peribahasa tidak ditemukan {sad_emoji()}")
+		result = ("Peribahasa tidak ditemukan %s" % sad_emoji())
 
 	return result
