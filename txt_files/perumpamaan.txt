@@ -1,54 +1,20 @@
-Peribahasa perumpamaan adalah sebuah kalimat yang mengungkapkan suatu kondisi tertentu. Ciri khas dari peribahasa perumpamaan adalah penggunaan kata seperti, bak, bagai, bagaikan.
-"Bagai air di atas daun talas."
-"Bagai anjing mengunyah tulang."
-"Menepuk air di dulang terpercik muka sendiri."
-"Sambil menyelam minum air."
-"Belum beranak sudah berbesan."
-"Bagai kumbang putus tali."
-"Bagai ayam bertelur di lumbung padi."
-"Bagai mencencang air tak putus."
-"Gajah berjuang sama gajah, pelanduk mati di tengah."
-"Gajah mati karena semut."
-"Harimau mati meninggalkan belang, gajah mati meninggalkan gading."
-"Bagai anak ayam kehilangan induk."
-"Bagai anjing mengunyah tulang."
-"Bagai harimau menyembunyikan kuku."
-"Bagai cacing kepanansan."
-"Bagai batu jatuh ke lubuk."
-"Seperti biduk dikayuh hilir."
-"Seperti bunga dadap, sungguh merah, berbau tidak."
-"Seperti durian dengan mentimun."
-"Seperti gunting makan diujung."
-"Seperti katak dalam tempurung."
-"Seperti kejatuhan bulan."
-"Seperti kucing dengan anjing."
-"Seperti lampu kekurangan minyak."
-"Seperti orang buta kehilangan tongkat."
-"Seperti pinang dibelah dua."
-"Seperti rabuk dengan api."
-"Seperti pungguk merindukan bulan."
-"Bagai makan buah si malakama, dimakan ibu mati, tidak dimakan bapak mati."
-"Bagai kacang lupa kulit."
-"Bagai pinang dibelah du."
-"Seperti api dalam sekam."
-"Seperti ular kena palu."
-"Bagai si kudung mendapat cincin."
-"Bagai gadis jolong bersubang."
-"Seperti ilmu padi, semakin berisi semakin merunduk."
-"Bagai bumi dan langit."
-"Bagai ayam termakan rambut."
-"Bagai bergantung diujung rambut."
-"Bagai teluk diujung tanduk."
-"Bagai kambing yang dimandikan."
-"Bagai menghitung bulu kucing."
-"Bagai kapal kehilangan kemudi."
-"Bagaikan air dengan minyak."
-"Bagai ayam mati di lumbung."
-"Bagai ayam bertelur di lumbung padi."
-"Bagai mendapat durian runtuh."
-"Seperti kuda lepas dari pingitan."
-"Bagai siang dan malam."
-"Bagai guna alu, sesudah menumbuk dicampakkan."
-"Bagai kucing dibawakan lidi."
-"Bagai terpijak bara hangat."
-"(Wajahnya) bagai bulan kesiangan."
+"Bak ilmu padi, kian berisi kian merunduk."xSelalu merendah diri.
+"Bak mandi di air kiambang, pelak lepas gatal pun datang."xSesuatu hal yang didapatkan sekalipun berguna, namun kemudian mendatangkan yang lebih menyiksa.
+"Bak menanti orang dahulu, bak melalah orang kudian."xMelakukan sesuatu hal yang sia-sia.
+"Bak tengguli di tukar cuka."xKejadian yang tertukar dari kejadian yang membahagiakan menjadi kejadian yang menyedihkan.
+"Bagai aur dengan tebing."xDua hal yang tak dapat dipisahkan.
+"Bagai alu sesudah menumbuk dicampakkan."xDihargai sewaktu dibutuhkan, setelah tak berguna lagi malah dibuang.
+"Bagai alu pencungkil duri."xMelakukan sesuatu yang sia-sia/tidak mungkin berhasil.
+"Bagai air di daun talas."xPendiriannya selalu berubah-ubah.
+"Bagai buah simalakama."xSulit dalam menentukan sikap.
+"Bagai burung dalam sangkar emas."xHidup mewah namun sangat terkekang dan tidak bahagia.
+"Bagai ayam dibawa kelampok."xKeheranan melihat sesuatu.
+"Bagai anak ayam kehilangan induknya."xKesusahan karena kehilangan panutan.
+"Bagai balam dengan ketitir."xDua orang yang selalu bertengkar dan masing-masing membanggakan dirinya.
+"Bagai pinang dibelah dua."xDua hal yang persis sama.
+"Bagai itik pulang petang."xSangat lambat jalannya.
+"Bagai garam jatuh ke air."xNasihat yang mudah diterima.
+"Bagai cacing kepanasan."xKeluh kesah orang yang tengah mendapat masalah besar.
+"Bagai batu jatuh ke lubuk."xSeseorang yang sudah meninggalkan tempatnya dan tidak mungkin kembali lagi ke tempat tersebut.
+"Bagai anjing mengunyah tulang."xOrang yang selalu marah.
+"Bagai harimau menyembunyikan kuku."xOrang yang menyembunyikan kekuatannya.
