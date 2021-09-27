@@ -8,10 +8,10 @@ Menurut Kamus Besar Bahasa Indonesia (KBBI), peribahasa adalah kelompok kata ata
 <br/>Bot telegram peribahasa Indonesia ([@peribahasa_bot](https://t.me/peribahasa_bot)) ini merupakan bot yang saya buat untuk skripsi, demi menyelesaikan pendidikan di jenjang Strata 1 (S1). [@peribahasa_bot](https://t.me/peribahasa_bot) dihadirkan sebagai media informasi peribahasa Indonesia yang di dalamnya terdapat lebih dari 60 peribahasa yang sudah dikelompokkan berdasarkan jenis-jenisnya yaitu pepatah, bidal, perumpamaan, tamsil dan semboyan untuk memudahkan pengguna dalam menemukan peribahasa yang dibutuhkan.[@peribahasa_bot](https://t.me/peribahasa_bot) diharapkan dapat memberi informasi sekaligus pembelajaran yang bermanfaat peribahasa Indonesia.
 
 ## System Requirements
-to runn @peribahasa_bot, u need requirements below:
+To run @peribahasa_bot, u need requirements below:
  - Python 3.x version with pip and [pyTelegramBotAPI](https://pypi.org/project/pyTelegramBotAPI/) installed.
 
-## Installation
+## Installations
 - python3 installation (Ubuntu)
   - install supporting softwares
   ```bash
@@ -25,7 +25,7 @@ to runn @peribahasa_bot, u need requirements below:
   ```bash
   sudo apt-get install python3.8
   ```
-  note : you can install the newer version of python by typing version of python (3.9)
+  Note : you can install the newer version of python by typing version of python (3.9)
 - python3 installation (Windows)
   - on windows, you can install the python installer by visit [the python website](https://www.python.org/downloads/)
 
@@ -33,7 +33,7 @@ to runn @peribahasa_bot, u need requirements below:
   ```bash
   pip install pyTelegramBotAPI
   ```
-- other installation
+- Other installation
   you can install from ```requirements.txt``` by typing
   ```bash
   pip install -r requirements.txt
@@ -45,8 +45,5 @@ after python3, pip and pyTelegramBotApi installed, run the telebot program by :
 python3 main.py
 ```
 
-## Features Update
-for information updates or adding more features,  you can see at [issue by labeled enhacement](https://github.com/ctrlbzul/telegramBot/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
-
-## peribahasa bot version
+## @peribahasa_bot version
 [version 1.0.0 stable](https://github.com/dydrmr5/telegramBot/releases/tag/v1.0.0)
